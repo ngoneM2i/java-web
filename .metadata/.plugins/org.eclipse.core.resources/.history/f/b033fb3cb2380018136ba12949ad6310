@@ -1,0 +1,29 @@
+package hello;
+
+import java.util.HashSet;
+
+public class SetMain {
+
+	public static void main(String[] args) {
+		HashSet<Shape> myset = new HashSet<Shape>();
+		
+		myset.add(new Rectangle());
+		myset.add(new Circle());
+		
+		System.out.println(myset.size());
+		
+		Rectangle r1 = new Rectangle();
+		
+		myset.add(r1);
+		myset.add(r1);
+		System.out.println(myset.size());
+		
+		for (Shape shape : myset) {
+			System.out.println(shape);
+			
+		}
+		
+
+ 	}
+
+}

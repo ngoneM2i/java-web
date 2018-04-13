@@ -1,0 +1,26 @@
+package hello;
+
+public class TTTGrid {
+	
+	private char [][] grille;  
+	
+	public TTTGrid(){
+		grille = new char[3][3];
+	}
+		
+	public void put(char symbol, int x, int y) {
+		grille[x][y] = symbol;	
+	}
+
+	public void print() {
+		System.out.println("----------");
+		for (int i = 0; i < grille.length ; i++) {
+			System.out.println("|  |  |  |");
+			for (int j = 0; j < grille.length -1  ; j++) {
+			System.out.println("|  |  |  |");
+			System.out.println("----------");
+			System.out.println(grille[i][j]);
+			}
+		}
+	}
+}

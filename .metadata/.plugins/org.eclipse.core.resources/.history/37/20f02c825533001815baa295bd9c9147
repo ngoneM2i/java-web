@@ -1,0 +1,15 @@
+package hello;
+
+public class Commande {
+		
+	Article[] panier = new Article[5];
+
+	public void ajouter(Article article) {
+		for (int i = 0; i < panier.length; i++) {
+			panier[i] = article;
+			break;
+		}
+				
+	} 
+
+}

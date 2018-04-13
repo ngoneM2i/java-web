@@ -1,0 +1,31 @@
+package hello;
+
+public class TicTacToeMain {
+
+	public static void main(String[] args) {
+		// Créer un jeu de morpion qui peut se jouer à 2 joueurs
+		
+		
+		// 1) Créer la classe grille suivant ces spécifications
+		TTTGrid grid = new TTTGrid();
+		//void put(char symbol, int x, int y);
+		grid.put('X', 1 , 2);
+		grid.put('0', 0 , 0);
+		grid.put('X', 0 , 1);
+		
+		//2) créer une méthode print qui permet d'afficher la grille grid.print();
+		grid.print();
+		/* 
+		 -----------
+		 | 0 |  |  | 
+		 -----------
+		 | 0 |  |  |
+		 -----------
+		 | 0 |  |  | 
+		 -----------
+		  */
+		
+
+	}
+
+}

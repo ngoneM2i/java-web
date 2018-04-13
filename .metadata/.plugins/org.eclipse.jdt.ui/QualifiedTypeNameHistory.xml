@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="jdk.management.resource.internal.inst.SocketOutputStreamRMHooks"/>
+    <fullyQualifiedTypeName name="hello.Commande"/>
+    <fullyQualifiedTypeName name="hello.StringUtilMain"/>
+    <fullyQualifiedTypeName name="org.w3c.dom.Text"/>
+    <fullyQualifiedTypeName name="java.math.BigInteger"/>
+    <fullyQualifiedTypeName name="hello.TransactionBigDecimal"/>
+    <fullyQualifiedTypeName name="java.math.BigDecimal"/>
+    <fullyQualifiedTypeName name="java.lang.Math"/>
+    <fullyQualifiedTypeName name="java.util.Random"/>
+    <fullyQualifiedTypeName name="java.lang.StringBuilder"/>
+    <fullyQualifiedTypeName name="org.graalvm.compiler.nodes.calc.IsNullNode"/>
+    <fullyQualifiedTypeName name="hello.TTTGrid"/>
+    <fullyQualifiedTypeName name="com.sun.tools.javac.parser.Scanner"/>
+</qualifiedTypeNameHistroy>

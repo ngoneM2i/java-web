@@ -1,0 +1,18 @@
+package hello;
+
+public class PersonneMain {
+
+	public static void main(String[] args) {
+		Personne p1 = new Personne();
+		
+		p1.setPrenom("Bob");
+		System.out.println(Prenom);
+		
+		p1.setNom("L'éponge");
+		System.out.println(p1.getNom());
+		
+		p1.setAge(18);
+		System.out.println(p1.getAge());		
+	}
+
+}

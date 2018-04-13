@@ -1,0 +1,12 @@
+package hello;
+
+public class Shape {
+	int width;
+	int height;
+	
+	public int calcArea(int width, int height) {
+		return width * height;
+	}
+	
+
+}

@@ -1,0 +1,12 @@
+package hello;
+
+public class Article {
+	
+	String titre;
+	int prix;
+	
+	public Article(String titre, int prix) {
+		
+	}
+
+}

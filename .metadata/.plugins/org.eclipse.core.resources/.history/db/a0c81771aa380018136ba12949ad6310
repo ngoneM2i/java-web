@@ -1,0 +1,8 @@
+package hello;
+
+public interface Shape {
+	
+	//les méthodes d'une classe sont public par defaut
+	double calcArea();
+
+}

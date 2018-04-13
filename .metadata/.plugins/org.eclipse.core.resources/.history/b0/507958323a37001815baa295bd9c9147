@@ -1,0 +1,20 @@
+package hello;
+
+public class MultiDimArrayDemo {
+
+	public static void main(String[] args) {
+		
+		int [] tab1Dim = new int[4];  
+		// [0, 0, 0, 0, 0]
+		
+		int [][] tab2Dim = new int[4][4];  
+		// [0, 0, 0, 0,]
+		// [0, 0, 0, 0,]
+		// [0, 0, 0, 0,]
+		// [0, 0, 0, 0,]
+		
+		
+
+	}
+
+}

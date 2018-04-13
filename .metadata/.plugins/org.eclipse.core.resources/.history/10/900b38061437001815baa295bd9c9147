@@ -1,0 +1,24 @@
+package hello;
+
+public class StringUtil {
+		
+	// compte le nombre de caractères autres que espace
+	public int countCharacters(String text) {
+		int nbChar = 0;
+		for (int i = 0; i < text.length(); i++) {
+			if(text.charAt(i) != ' ')
+				{
+				nbChar++;
+				}		
+			}
+		return nbChar;
+	}
+
+	public int countWords(String texte) {
+		int nbWord = 0;
+		for (int i = 0; i < texte.length(); i++) {
+			nbWord++;
+	}
+	return nbWord;	
+}
+}

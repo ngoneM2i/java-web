@@ -1,0 +1,54 @@
+package hello;
+
+import java.math.BigDecimal;
+
+public class TransactionBigDecimalMain {
+
+	public static void main(String[] args) {
+		// Une transaction a deux variables d'instance:
+		// - type: String ("debit" ou "credit")
+		// - amount: double (toujours positifs)
+		//Créer 4 transactions:
+		//débit: 10, crédit: 20, débit:30, crédit: 15
+
+		Transaction t1 = new Transaction("débit", 10);
+		//t1.setType("debit");
+		//t1.setAmount(10);
+
+		System.out.println(t1.getType());
+
+		TransactionBigDecimal t2 = new TransactionBigDecimal("crédit", new BigDecimal("10"));
+		//t2.setType("debit");
+		//t2.setAmount(10);
+
+		TransactionBigDecimal t3 = new TransactionBigDecimal("débit",  new BigDecimal("20"));
+		//t3.setType("debit");
+		//t3.setAmount(20);
+
+		TransactionBigDecimal t4 = new TransactionBigDecimal("crédit",  new BigDecimal("15"));
+		//t4.setType("debit");
+		//t4.setAmount(15);
+
+		TransactionBigDecimal[] transactions = new TransactionBigDecimal[4];
+		transactions[0] = t1;
+		transactions[1] = t2;
+		transactions[2] = t3;
+		transactions[3] = t4;
+
+		// exercice calculer le total des transactions
+		double total = 0;
+		for (int i = 0; i < transactions.length; i++) {
+			if(transactions[i].getType().equals("debit")) {
+				total -= transactions[i].getAmount();
+			} else if (transactions[i].getType().equals("credit")) {
+				total += transactions[i].getAmount();
+			} else {
+				System.out.println("type de transaction inconnu - gérer l'erreur plus proprement");
+			}
+
+		}
+	}
+
+}
+
+}

@@ -1,0 +1,7 @@
+package hello;
+
+public class Car {
+	int capaciteReservoirEssence;
+	int consomationEssencePar100Km;
+
+}

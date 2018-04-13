@@ -1,0 +1,32 @@
+package hello;
+
+public class AnimalMain {
+
+	public static void main(String[] args) {
+		Dog d = new Dog();
+		d.setName("medor");
+		d.setAge(2);
+		System.out.println(d.getName() + ":" + d.getAge());
+		d.bark();
+		d.makeSound();
+
+		Cat c = new Cat();
+		c.setName("fido");
+		c.setAge(8);
+		System.out.println(c.getName() + ":" + c.getAge());
+		c.makeSound();
+		
+		Animal c2 = new Cat(); // a cat is an Animal 
+		Object c3 = new Cat();
+		//c3.makeSound();  //ne compile pas, makeSound est invisible
+		//Cat c4 = new Animal(); false because a Animal is not a cat
+		
+		Animal[] animals = {c, d};
+		for (int i = 0; i < animals.length; i++) {
+			animals[i].makeSound();
+			
+		}
+	}
+	
+
+}

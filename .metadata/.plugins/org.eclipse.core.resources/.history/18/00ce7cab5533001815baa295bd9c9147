@@ -1,0 +1,20 @@
+package hello;
+
+public class Commande {
+		
+	Article[] panier = new Article[5];
+
+	public void ajouter(Article article) {
+		c
+			panier[i] = article;
+			
+		}
+				
+	}
+
+	/*public void demanderMontantTotal(Commande commande) {
+		commande.ajouter(a3);
+		
+	} */
+
+}

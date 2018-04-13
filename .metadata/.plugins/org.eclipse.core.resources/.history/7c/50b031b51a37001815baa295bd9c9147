@@ -1,0 +1,36 @@
+package hello;
+
+public class StringUtil {
+		
+	// compte le nombre de caractères autres que espace
+	public int countCharacters(String text) {
+		int nbChar = 0;
+		for (int i = 0; i < text.length(); i++) {
+			if(text.charAt(i) != ' ')
+				{
+				nbChar++;
+				}		
+			}
+		return nbChar;
+	}
+
+	public int countWords(String text) {
+		int nbWord = 0;
+		for (int i = 0; i < text.length(); i++) {
+			nbWord++;
+		}
+	return nbWord;	
+	}
+
+	public char[] isPalindrome(String text) {
+		boolean pal = false;
+		String stringReverse;
+							
+		for (int i = 0; i < text.length(); i++) {
+			for (int j = text.length() - 1; j >= 0; j--) {
+				stringReverse  = text.charAt(i);
+				if (stringReverse.equals(text)) {
+					return stringReverse;
+				} 
+			}
+	

@@ -1,0 +1,30 @@
+package hello;
+
+import java.math.BigInteger;
+
+public class Nombres {
+	public static void main(String[] args) {
+		
+		int i0 = 1;
+		Integer i1 = new Integer(1); // déprécié, utiliser valueOf
+		Integer.parseInt("123");
+		Double d1 = new Double(1);
+		
+		int i2 = Integer.parseInt("123");
+		System.out.println((i2));
+		// int i3 = Integer.parseInt("123abc) exeption
+		System.out.println(Integer.toHexString(255));
+		
+		System.out.println(Integer.valueOf(123));
+		System.out.println(Integer.MAX_VALUE);
+		System.out.println(Integer.MIN_VALUE);
+		System.out.println(Integer.BYTES);
+		System.out.println(Integer.SIZE);
+		
+		BigInteger bi1 = new BigInteger("123456900000000");
+		BigInteger bi1 = new BigInteger("12345690000045678");
+		
+		System.out.println(bi1.add(bi2));
+	}
+	
+}

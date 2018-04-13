@@ -1,0 +1,50 @@
+package hello;
+
+import java.util.Scanner;
+
+public class TicTacToeMain {
+
+	public static void main(String[] args) {
+		// Créer un jeu de morpion qui peut se jouer à 2 joueurs
+
+		// 1) Créer la classe grille suivant ces spécifications
+		TTTGrid grid = new TTTGrid(3); //0 0, 0 1, 1 0, 1 1
+		//grid.print();
+		//void put(char symbol, int x, int y);
+		//grid.put('X', 1 , 2);
+		//grid.put('0', 0 , 0);
+		//grid.put('X', 0 , 1);
+
+		//2) créer une méthode print qui permet d'afficher la grille grid.print();
+
+		grid.print();
+
+		Scanner sc = new Scanner(System.in);
+
+		int cordonneeX;
+		int cordonneeY;
+		//pion = sc.nextLine();
+		cordonneeX = sc.nextInt();
+		cordonneeY = sc.nextInt();
+
+		Player p1 = new Player("Olivier", 'O');
+		Player p2 = new Player("Xavier", 'X');
+
+		System.out.print(p1.getNom());
+		System.out.println(p1.getSymbol());
+		System.out.print(p2.getNom());
+		System.out.println(p2.getSymbol());
+
+		/*Player[] joueurs = {p1 , p2};
+
+		System.out.println("Debut du jeu :");
+		for(;;) {
+			for (int i = 0; i < joueurs.length; i++) {
+				System.out.println(joueurs[i].getNom());
+				grid.put(joueurs[i].getSymbol(), cordonneeX , cordonneeY);
+				grid.print();
+			}
+		}*/
+	}
+
+}

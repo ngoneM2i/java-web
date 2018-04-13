@@ -1,0 +1,116 @@
+package hello;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Map.Entry;
+
+public class StringUtil {
+
+	public int countCharacters(String text) {
+		// v1
+		// String textWithoutSpaces = text.replace(" ", "");
+		// return textWithoutSpaces.length();
+		
+		// v2
+		int charCount = 0;
+		for (int i = 0; i < text.length(); i++) {
+			//if(text.charAt(i) != ' ') 
+		//	if (!(isWhiteSpace(text.charAt(i))))
+			{
+				charCount++;
+			}
+		}
+		
+		return charCount;
+	}
+
+	public int countWords(String text) {
+		// v1
+//		if(text.isEmpty()) {
+//			return 0;
+//		}
+//		
+//		int wordsCount = 0;
+//		boolean isCharInAWord = false;
+//		for (int i = 0; i < text.length(); i++) {
+//			
+//			if(! isCharInAWord
+//			  && text.charAt(i) != ' ') { // debut d'un mot
+//				isCharInAWord = true;
+//			} else if (isCharInAWord
+//					&& text.charAt(i) == ' ') { // fin d'un mot
+//				isCharInAWord = false;
+//				wordsCount++;
+//			}
+//			
+//		}
+//		
+//		if(isCharInAWord) {
+//			wordsCount++;
+//		}
+//		return wordsCount;
+		
+		// v2
+		int wordsCount = 0;
+		String[] splittedText = text.split(" ");
+		for (int i = 0; i < splittedText.length; i++) {
+			if(! splittedText[i].isEmpty()) {
+				wordsCount++;
+			}
+		}
+		
+		return wordsCount;
+		
+	}
+
+	
+	public boolean isPalindrome(String text) {
+		if(text.isEmpty()
+		|| text.length() == 1) {
+			return false;
+		}
+		
+//		if(text.length() == 1) {
+//			return false;
+//		}
+		
+		for (int i = 0; i < text.length() / 2; i++) {
+			if(text.charAt(i) != text.charAt(text.length() - i - 1)) {
+				return false;
+			}
+		}
+		
+		return true;
+		
+	}
+
+	/*Lundi : 2
+	Mardi: 2
+	Mercredi: 1*/
+	
+	
+	public Map<String, Integer> countWordOccurences(String text) {
+		//...
+		
+		// je crée un compteur qui permet de compter le nombre
+		// d'occurences de chaque mot
+		HashMap<String, Integer> wordsCounters = new HashMap<String, Integer>();
+		
+		// trouver tous les mots
+		String[] words = text.split(" ");
+		for (String currentWord : words) {
+			if(! wordsCounters.containsKey(currentWord)) {
+				// si le mot n'a pas été compté => 1
+				wordsCounters.put(currentWord, 1);
+			} else {
+				// si le mot a déjà été compté => ++
+				Integer counter = wordsCounters.get(currentWord);
+				counter++;
+				wordsCounters.put(currentWord, counter);
+			}
+		}	
+		return wordsCounters;
+	}
+	
+	
+}

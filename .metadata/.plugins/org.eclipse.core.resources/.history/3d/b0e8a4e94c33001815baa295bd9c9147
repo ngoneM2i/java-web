@@ -1,0 +1,16 @@
+package hello;
+
+public class Commande {
+		
+	Article[] commande = new Article[5];
+
+	public void ajouter(Article article) {
+		for (int i = 0; i < commande.length; i++) {
+			commande[i] = article;
+		}
+				
+	}
+	
+	
+
+}

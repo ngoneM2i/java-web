@@ -1,0 +1,25 @@
+package hello;
+
+import java.math.BigDecimal;
+import java.util.ArrayList;
+
+public class ListMain {
+
+	public static void main(String[] args) {
+		ArrayList<Object> myList = new ArrayList<Object>(); 
+		
+		myList.add(new Cat());
+		myList.add(new Cat());
+		myList.add(new Dog());
+		myList.add(new TransactionBigDecimal("débit", new BigDecimal(10)));
+		
+		System.out.println(myList.get(2));
+		
+		for (int i = 0; i < myList.size(); i++) {
+			System.out.println(myList.get(i));
+			
+		}	
+
+	}
+
+}

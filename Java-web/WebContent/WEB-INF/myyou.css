@@ -1,0 +1,27 @@
+html {
+    font-size: 10px;
+    font-family: Roboto, Arial, sans-serif;
+    background-color: #fafafa;
+    display:inline-flex;
+}
+    
+body {
+    font-size: rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #fff;
+    
+}
+
+p {
+    color: rgb(1, 1, 15)
+}
+app, embed.ytd-app, fieldset.ytd-app, font.ytd-app, form.ytd-app, h1.ytd-app, h2.ytd-app, h3.ytd-app, h4.ytd-app, h5.ytd-app, h6.ytd-app, hr.ytd-app, i.ytd-app, iframe.ytd-app, img.ytd-app, ins.ytd-app, kbd.ytd-app, label.ytd-app, legend.ytd-app, li.ytd-app, menu.ytd-app, object.ytd-app, ol.ytd-app, p.ytd-app, pre.ytd-app, q.ytd-app, s.ytd-app, samp.ytd-app, small.ytd-app, span.ytd-app, strike.ytd-app, strong.ytd-app, sub.ytd-app, sup.ytd-app, table.ytd-app, tbody.ytd-app, td.ytd-app, tfoot.ytd-app, th.ytd-app, thead.ytd-app, tr.ytd-app, tt.ytd-app, u.ytd-app, ul.ytd-app, var.ytd-app {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: transparent;
+}
+user agent stylesheet
+div {
+    display: block;
+}

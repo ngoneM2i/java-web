@@ -6,7 +6,7 @@ public class User {
 	private String prenom;
 	
 	
-	public User(String nom, String prenom, int age) {
+	public User(String nom, String prenom) {
 		this.nom = nom;
 		this.prenom = prenom;
 		

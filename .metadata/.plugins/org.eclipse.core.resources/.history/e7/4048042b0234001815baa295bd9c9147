@@ -1,9 +1,0 @@
-package hello;
-
-public class Article {
-	
-	private String titre;
-	private int prix;
-	
-
-}

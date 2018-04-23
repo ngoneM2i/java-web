@@ -6,13 +6,31 @@ public class Video {
 	private String source;
 	private long nbVues;
 	private int durée;
+	private int id;
 	
-	public Video(String title, String source,long nbVues,int durée) {
+	public Video(String title, String source, long nbVues, int durée, int id) {
+		super();
 		this.title = title;
 		this.source = source;
 		this.nbVues = nbVues;
 		this.durée = durée;
-		
+		this.id = id;
+	}
+
+	public String getSource() {
+		return source;
+	}
+
+	public void setSource(String source) {
+		this.source = source;
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
 	}
 
 	public long getNbVues() {

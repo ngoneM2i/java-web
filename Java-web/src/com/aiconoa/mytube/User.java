@@ -1,5 +1,8 @@
 package com.aiconoa.mytube;
 
+import org.apache.jasper.tagplugins.jstl.core.ForEach;
+
+
 public class User {
 	
 	private	String nom;
@@ -28,5 +31,6 @@ public class User {
 		this.prenom = prenom;
 	}
 
+	
 	
 }

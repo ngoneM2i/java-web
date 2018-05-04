@@ -1,0 +1,245 @@
+/*
+*************************************************************/
+html{
+    background-image: url(img/neige.jpeg);
+    background-size: cover; 
+    background-color: gray;
+    background-attachment: fixed; 
+    font-size: 10px;
+    font-family: Roboto, Arial, sans-serif; 
+    justify-content: center;
+    position: relative;
+    vertical-align: middle;
+    font-size: 70%;
+    /* flex-direction: row-reverse;
+    justify-content: space-between;
+    display:inline-flex;  */
+    }
+    .contener{  
+        display: inline-flex;
+        justify-content: center;
+        position: relative;
+        vertical-align: middle;
+        flex-direction: row;
+        justify-content: center;
+        justify-content: space-between;
+    }
+   
+
+    .titlebar {
+        background-color: rebeccapurple;
+        display: inline-flex;
+        flex-direction: row; 
+        width: 100%; 
+        height: 10%; 
+        opacity: 0.8; 
+        margin :auto auto;
+        padding-top: 10px;
+        /* position: fixed; */
+        /* padding-right: 100%; */
+        }
+
+
+.genre  {
+    background-color: rgb(73, 67, 67);
+    color: black;
+    font-size: 50px;  
+    margin-top: 0px;
+}
+
+
+    .liste_video  {
+    display: inline-flex;
+    justify-content: center;
+    /* position: relative; */
+    vertical-align: middle;
+    padding-bottom: 70px;
+    size:50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5px;
+    margin-left: 60px;
+    margin-top: 30px;
+
+    }
+    .colonne_video_lecture_auto {
+        display: inline-flex;
+        position: absolute; 
+        padding-right: 100%;
+        top: 10px;
+        padding-bottom: 70px;
+    }
+    
+
+    .detail_video {
+        padding-bottom: 70px;
+        
+    }
+
+    .videos_detail_et_Comment{
+        padding-bottom: 70px;
+    }
+    
+    .source_video {
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 10px
+
+    }
+
+    .titre_video {
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 10px
+    }
+
+
+    .nbVue_video {
+        
+    }
+    .desc {
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 10px
+       
+    }
+
+    .date_de_pub-video {
+        
+    }
+
+    .date_de_pub-video {
+        
+    }
+
+    
+    .la_video_en_detail {
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 10px
+       
+    }
+
+    .Comments {
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 10px
+       
+    }
+
+    .colonne_video_lecture_auto {
+        display: inline-flex;
+    
+
+    }
+
+
+
+    /* html {
+        font-size: 10px;
+        font-family: Roboto, Arial, sans-serif;
+        background-color: #fafafa;
+        display:inline-flex;
+    } */
+        
+    /*
+    *************************************************************/
+    
+
+    
+    
+        
+
+    /* .title__item_3 {
+        background-color: black;
+    }
+
+
+    *********************************************/
+    
+    /* .videos{
+        size: 500%;
+        flex-direction: row; 
+        font-size: 3.5rem;
+        background-color: white;
+        opacity: 0.4;
+         
+    }   */
+    
+/****************************************/
+
+    /* .liste_video {
+    display: inline-flex;
+    justify-content: center;
+    position: relative;
+    vertical-align: middle;
+    flex-direction: row;
+    justify-content: space-between; */ */
+    /* font-size: 1.2em;
+    font-style: bold;
+    padding-top:  50px;
+    size:50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5px;
+    opacity: 1;  */
+    }
+    
+    /* .videos2{
+        padding-top:  50px;
+        size:500%;
+        display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 5px;
+     opacity: 0.8;
+        }
+        
+    
+    .videos__item{
+        display: flex;
+           font-weight: bold;
+           font-size: 3.5rem;
+          
+          
+            flex-direction: column;
+           /* align-items: center; */
+            /* background-repeat: no-repeat;
+            padding-bottom: 1px;
+            padding-top: 1px;
+            background-position-x: bottom;
+            background-position-y: center;
+            background-size: cover;
+            align-items: stretch;
+height: 300px;
+       }
+       
+     */ 
+       
+    /*
+    *************************************************************************************************************
+    */
+
+   /* .videos__item__title {
+    
+        font-weight: bold;
+        font-size: 1.7rem;
+        margin: 0px 0px;
+        color: black;
+         justify-content: center;  
+    } 
+
+    
+    .videos__item__tagline{
+      
+        font-size: 1rem;
+        color: black;
+        
+      font-style: italic;
+    } 
+    .videos__item__img{
+      display: block;
+        height: 100%;
+        
+    } */
+
+
+
+ 
+
+
+    
